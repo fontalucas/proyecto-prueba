@@ -36,7 +36,11 @@ body {
     color: rgb(182, 32, 32);
     display: flex;
     justify-content: center;
+    transition: transform 1.5s;
   
+}
+.header__list li:hover {
+    transform: scale(1.5);
 }
 
 .header__list__item {
@@ -303,7 +307,18 @@ h5  {
         margin: 10px;
         width: 90%;
         height: fit-content;
-        padding: 5px 5px;}
+        padding: 5px 5px;
+        animation: comienzo 2s ease 0s 1 normal both;}
+        @keyframes comienzo {
+            0% {
+                opacity: 0;
+                transform: translateX(-250px);
+            }        
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
     .mudanza { 
         grid-area: mudanza;
         background-color: rgba(0, 0, 0, 0.544);
@@ -312,7 +327,18 @@ h5  {
         border: solid 1px black;
         margin: 10px;
         width: 95%;
-        height: fit-content;}
+        height: fit-content;
+        animation: mudanza 2s ease 1s 1 normal both;}
+        @keyframes mudanza {
+            0% {
+                opacity: 0;
+                transform: translateX(250px);
+            }        
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
     .local {
         grid-area: local;
         background-color: rgba(0, 0, 0, 0.544);
@@ -322,7 +348,18 @@ h5  {
         width: 100%;
         height: fit-content;
         margin: auto;
-        padding: 5px 5px;}
+        padding: 5px 5px;
+        animation: local 2s ease 2.5s 1 normal both;}
+        @keyframes local {
+            0% {
+                opacity: 0;
+                transform: translateY(250px);
+            }        
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
     .textolargo {
 
