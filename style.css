@@ -444,6 +444,13 @@ footer {
     margin: auto;    
 }
 
+/* /* SEUDOCLASES */
+    /* :focus
+    :hover
+    :checked */
+
+/* PSEUDO ELEMENTO */
+    /* :active */
 /* MEDIA: max es hasta esos px, min es desde "x"px a mas */
 @media only screen and (max-width: 768px) {
     .header {
