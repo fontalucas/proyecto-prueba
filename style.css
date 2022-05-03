@@ -25,7 +25,7 @@ body {
 }
 .navbar {
     border: solid 1px #ce432b;
-    background-color: #620000;
+    background-color: #0000008a;
     justify-content: center;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
@@ -45,8 +45,8 @@ body {
     transform: scale(1.1);
 }
 .carousel-item {
-    height: 500px;
-    width: 700px;
+    height: 38rem;
+    width: 100%;
 }
 
 /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
@@ -122,11 +122,18 @@ h4 {
     background-color: rgba(0, 0, 0, 0.52);
     border-radius: 5%;
     width: max-content;
-    font-size: 30pt;
     padding: 2%;
     color: #ffc400;
     font-family: "Montserrat";
     margin: auto;
+}
+
+.pedidos:hover {
+    transition: 1s;
+    transition-duration: 500ms;
+    transform: scale(1.2);
+    background-color: #c79500d2;    
+
 }
 /* Aling content es solo cuando es wrap */
 
@@ -161,8 +168,10 @@ p {
 
 /* MAIN MENU */ /* MAIN MENU */ /* MAIN MENU */ /* HEADER MENU */
 .menu {
-    background-image: url(./imagenes/);
-}
+    background-image: url(./imagenes/menu.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
 
 .menu h4 {
     font-size: 20px;
@@ -262,6 +271,7 @@ p {
 
 
 /* MAIN NSTRA HISTORIA */ /* MAIN NSTRA HISTORIA */ /* MAIN NSTRA HISTORIA */ /* MAIN NSTRA HISTORIA */
+
 
 h5  {
     font-family: "Barlow Condensed";
@@ -368,14 +378,14 @@ h5  {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 350px;
+    width: 25%;
+    height: 40%;
     border: solid 2px black;
     border-radius: 5%;
     margin: auto;
     background-color: rgb(141, 141, 47);
-    margin-bottom: 100px;
-    margin-top: 10px;
+    margin-bottom: 10%;
+    margin-top: 2%;
 }
 
 .formulario {
@@ -405,7 +415,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .footer__redes {
@@ -581,8 +591,8 @@ footer {
 }
    }
 
-   @media only screen and (max-width: 420px) {
-    /* INDEX */  
+   @media only screen and (max-width: 425px) {
+    /* INDEX */
     /* HEADER */
     .header {
         width: 100vw;
@@ -596,39 +606,22 @@ footer {
         width: 75px;
         height: 75px;  
         align-items: center;
-        margin: 5px ;
-        
+        margin: 5px ;    
     }
-        
-    .header__list {
-        border: solid 1px black;
-        width: 99vw;
-        background-color: rgba(116, 24, 24, 0.782);
-        color: rgb(182, 32, 32);
-        display: flex;
-        justify-content: center;
-      
+    .navbar-toggler-icon {
+        height: 15px !important;
+        width: 15px !important;
     }
-    .header__list__item {
-        display: inline-block;
-        padding: 2px;
-        margin: 1px 5px;
-       
+    .navbar a {
+        color: white !important;
+        text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47) !important;
+        font-size: 0.7rem !important;
     }
-    .cabecera__list__link {     
-        text-decoration: none;
-        list-style: none;
-        color: white;
-        text-align: center;
-        font-size: 55%;
-        text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47);
-    
-    } 
-    .banner {
-           justify-content: center;
-           margin: auto;
-           width: 98vw;
-       }
+    .carousel-item {
+        height: 9rem;
+        width: 100%;
+    }
+
        /* MAIN */
 
     .promost {
@@ -646,7 +639,7 @@ footer {
     .promos__subt1 {
         border-radius: 15%;
         padding: 2%;
-        width: 30%;
+        width: 60%;
         margin: auto;
         font-size: 3px;
     }
@@ -655,15 +648,15 @@ footer {
         margin: auto;
         border-radius: 15%;
         padding: 1%;
-        width: 30%;
+        width: 60%;
         margin-bottom: 10px;
         font-size: 3px;
     }
     .promos__subt2 {
-        padding: 3%;
-        border-radius: 80%;
+        padding: 6%;
+        border-radius: 50%;
         font-size: 1px;
-        width: 50%;
+        width: 65%;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -671,12 +664,12 @@ footer {
     
     p {
         font-family: Montserrat;
-        font-size: 0.6rem;
+        font-size: 0.6rem !important;
         text-align: center;        
     }
     .p__importante {
         text-align: center;
-        font-size: 0.7rem;        
+        font-size: 0.7rem !important;        
         
     } 
     
@@ -690,14 +683,15 @@ footer {
         width: 200px;
     }   
     h3 {
-        font-size: 1.3rem;
+        font-size: 1.3rem !important;
         width: 99%;
+        margin-top: 10px !important;
     }
     h4 {
         border-radius: 5%;
         width: max-content;
-        font-size: 0.9rem;
-        padding: 2px;
+        font-size: 0.9rem !important;
+        padding: 2px ;
         margin: auto;
     }
 /* FOOTER */
@@ -722,21 +716,21 @@ footer {
 /* MENU */
 
 .menu h4 {
-    font-size: 13px;
+    font-size: 13px !important;
     
 }
 .menu p {
-    font-size: 9px;
+    font-size: 9px !important;
 }
 h2 {
-    font-size: 15px;
+    font-size: 15px !important;
     width: fit-content;
     padding: 2px;
 }
 .contenedor1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 10% 30% 30% 30%;
     grid-template-areas: 
     "lineas__clasica"
     "maxima"
@@ -749,7 +743,7 @@ h2 {
 }
 
     
-.lineas__clasica { grid-area: lineas__clasica; }
+.lineas__clasica { grid-area: lineas__clasica;}
 .maxima { grid-area: maxima;}
 .victoria { grid-area: victoria; }
 .isabel { grid-area: isabel; }
@@ -757,7 +751,7 @@ h2 {
 .contenedor2 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: 3% 12% 12% 3% 12% 12% 3% 12% 12% ;
         grid-template-areas: 
             "lineaGolden"
             "reyarturo" 
@@ -772,6 +766,7 @@ h2 {
         justify-content: center;
         margin: auto;
         gap: 2rem;
+        margin-top: 55px;
     
 
     
@@ -802,6 +797,20 @@ h2 {
 .menu__subt {
     margin-top: 10px;
 }
+
+.card {
+    background-color: #00000037 !important; /* me pisa el boostrap */
+    border: solid 1px white !important;
+    margin: auto;
+    margin-top: 0%;
+    width: 9rem !important;
+}
+
+.card-img-top {
+    width: 8rem !important;
+    height: 8rem !important;
+    margin: auto;
+}   
 
 /* MAIN PEDIDOS */ /* MAIN PEDIDOS */ /* MAIN PEDIDOS */ /* MAIN PEDIDOS */
 

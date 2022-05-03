@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <!-- Css origin -->
+    <link rel="stylesheet" href="style.css">
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="../imagenes/logo.jpg">
     <!-- title -->
     <title>Real Meet&Taste</title>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FORMULARIO -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
         (function() {
         emailjs.init("BqcEIvC45OWpmZ1p3");
         })();
-        </script>
-        <script type="text/javascript">
+    </script>
+    <script type="text/javascript">
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -38,28 +47,23 @@
     <header class="header">
         <img src="../imagenes/logo.jpg" alt="logo del bar" class="cabecera__img">
         <div>
-            <nav>
-                <ul class="header__list">
-                    <li class="header__list__item">
-                        <a href="../index.html" class="cabecera__list__link"> HOME </a>
-                    </li>
-                    <li class="header__list__item">
-                        <a href="./menu.html" class="cabecera__list__link"> MENU </a>
-                    </li>
-                     <li class="header__list__item">
-                            <a href="./pedidos.html" class="cabecera__list__link"> PEDIDOS </a>
-                    </li>
-                     <li class="header__list__item">
-                            <a href="./nuestra-historia.html" class="cabecera__list__link"> NSTRA HISTORIA</a>
-                    </li>
-                    <li class="header__list__item">
-                        <a href="../pormos.html" class="cabecera__list__link"> PROMOS </a>
-                    </li>
-                     <li class="header__list__item">
-                         <a href="#" class="cabecera__list__link"> CONTACTO </a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME </a>
+                            <a class="nav-link" href="./menu.html">MENU</a>
+                            <a class="nav-link" href="./pedidos.html">PEDIDOS</a>
+                            <a class="nav-link" href="/nuestra-historia.html">NUESTRA HISTORIA </a>
+                            <a class="nav-link" href="../index.html#promociones">PROMOS</a>
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </div>
+                    </div>      
+                </div>
+            </nav>
            
    </header>
     <main>
@@ -100,7 +104,7 @@
                         
                     </li>
                     <li class="footer__lista__links">
-                        <a href="https://wwww.instagra.com/realburgersf" target="_blank"> <img src="../imagenes/ig.png" alt="logo instagram" class="iconos"> Instagram</a>
+                        <a href="h  ttps://www.instagram.com/realburgersf" target="_blank"> <img src="../imagenes/ig.png" alt="logo instagram" class="iconos"> Instagram</a>
                         
                     </li>
                     <li class="footer__lista__links"> 
@@ -112,7 +116,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 
