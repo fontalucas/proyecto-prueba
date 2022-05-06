@@ -1,0 +1,32 @@
+.cajaformulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 40%;
+    border: solid 2px black;
+    border-radius: 5%;
+    margin: auto;
+    background-color: rgb(141, 141, 47);
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+
+.formulario {
+   display: block;
+   justify-content: center;
+   margin: auto;
+
+}
+
+.box {
+    width: 100%;
+    height: 60px;
+
+}
+    
+.enviar {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

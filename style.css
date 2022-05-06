@@ -20,8 +20,7 @@ body {
     display: flex;
     align-items: center;
     margin: 5px ;
-    margin: auto;
-    
+    margin: auto;   
 }
 .navbar {
     border: solid 1px #ce432b;

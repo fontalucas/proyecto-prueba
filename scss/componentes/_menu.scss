@@ -1,10 +1,15 @@
-.main {
+/* .main { */
     /* atributos */
-
-    .menu {
+    /* @include flexbox(block, flex-start, end);
+    .menu { */
         /* atributos */
+       /*  @extend %flex-center;
     }
-        .contenedor1 {
+        .contenedor1 { */
             /* atributos */
+        /* font-size: map-get($map: $tamanio-tipografia,); */
+        /* @include mediaQuery(mobile){
+            
         }
-}
+        }
+} */

@@ -1,1 +1,91 @@
-$color-principal: red;
+
+
+
+/* $tamanio-total: 100%;
+$tamanio-medio: $tamanio-total/2;
+$tamanio-chico: $tamanio-medio/2; */
+
+
+
+/* MAPS siempre con parentesis*/
+$tamanio-tipografia:(
+    titulos: 24px,
+    subtitulos: 18px,
+    parrafo: 11px,
+    letra-chica: 8px, 
+);
+
+$colores:(
+    color-principal: rgba(120, 0, 0, 0.57),
+    color-secundario: #ce432b,
+    color-titulos: red,
+    color-subtitulos: yellow,
+    color-subtitulosb: blue,
+
+);
+
+/* @each $redsocial, $color in $redessociales {
+    .icono-#{redsocial}{
+
+    } */
+
+
+/* EXTEND sirve para repetir */
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+};
+/* Reutilizar codigos modificandolos */
+@mixin flexbox ($direction, $justify, $align /* parametros */) {
+    display: flex;
+    direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+    @if $direction == column {
+        justify-items: end;   
+    }@else {
+        justify-items: space-around;
+    }
+
+}
+
+/* CONDICIONALES */
+
+/* 
+    if condicion {
+        pasa esto}else {
+            pasa esto otro}
+
+    si (tu me hubieras dicho){seria
+    } else { ahora te puedes
+    }
+*/
+
+@mixin mediaQuery ($pantalla) {
+    
+    @if $pantalla == mobile {
+        @media only screen and (max-width: 425px) {
+            @content;
+     }
+        
+    };
+    @if $pantalla == tablet {
+        @media only screen and (max-width: 780px) {
+            @content;
+        }
+        
+    };
+    @if $pantalla == desktop {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+        
+    };
+}
+
+/* BUCLE FOR */
+
