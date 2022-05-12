@@ -1,10 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-}
+};
 
 body {
-    background-image: url(./imagenes/BACKROUND.jpeg);
+    background-image: url(../imagenes/BACKROUND.jpeg);
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -20,56 +20,56 @@ body {
 }
 
 .navbar {
-    border: solid 1px #ce432b;
+    border: solid 1px map-get($colores, color-secundario);
     background-color: #0000008a;
     justify-content: center;
     padding-top: 0px !important;
-    padding-bottom: 0px !important;  
+    padding-bottom: 0px !important;
     .navbar-nav {
         margin: auto;
         justify-content: space-evenly;
-        width: 80%; 
-        .navbar a {
-            color: white !important;
-            text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47) !important;
-            transition: transform 1s; 
-            &:hover {
-                transform: scale(1.1); }
-        }
-    }
+        width: 80%; }
+}
+.navbar a {
+    color: white !important;
+    text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47) !important;
+    transition: transform 1s; 
+        &:hover {
+            transform: scale(1.1); }
 }
 
 footer {
     position: relative;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    .footer .footer__redes {
+    @include flexbox(column, center, center);
+    .footer__redes {
         background-color: rgba(0, 0, 0, 0.544);
         margin-bottom: 0;
         display: flex;
-        justify-content: end;
-        .footer__lista__links {
-        display: inline-block;
-        margin: 10px; 
-            &__a {
-            display: inline-block;
-            margin: 10px; }
-        }
+        justify-content: end; 
     }
 }
+.footer__lista__links {
+    display: inline-block;
+    margin: 10px; }
+.footer__lista__links a {
+    @include flexbox(column, center, center);
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: auto;
+}
+
 .iconos {
     width: 30px;
     height: 30px;
     margin: auto;    
 }
 
-main {
+.main {
     @include flexbox(block, space-around, center);
-    width: 100%;
+    width: 100%;}
     
-    h2 /* SUBTITULO MENU */{
+h2 /* SUBTITULO MENU */{
     text-align: center;
     border: groove 2px rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -79,9 +79,9 @@ main {
     font-size: 20pt !important;
     font-family: 'Indie Flower';
     border-radius: 5px;}
-    h3 /* TITULOS */{
+h3 /* TITULOS */{
     text-align: center;
-    border: groove 2px #ce432b;
+    border: groove 2px map-get($colores, color-secundario);
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.277);
     margin: auto;
@@ -89,7 +89,7 @@ main {
     font-size: 28pt !important;
     font-family: 'Indie Flower', cursive;
     margin-top: 3rem !important;}
-    h4 /* SUBTITULOS */{
+h4 /* SUBTITULOS */{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.52);
     border-radius: 5%;
@@ -99,13 +99,10 @@ main {
     font-family: "Montserrat";
     margin: auto;
     }
-}
 
 .maps {
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     border: solid 10px black;
-    margin: auto;
     margin-bottom: 5%;
     height: 500px;
     width: 650px;
