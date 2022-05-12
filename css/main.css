@@ -1,13 +1,15 @@
-/* $tamanio-total: 100%;
-$tamanio-medio: $tamanio-total/2;
-$tamanio-chico: $tamanio-medio/2; */
-/* MAPS siempre con parentesis*/
-/* @each $redsocial, $color in $redessociales {
-    .icono-redsocial{
+/* EXTEND */
+.enviar {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center; }
 
-    } */
-/* EXTEND sirve para repetir */
 /* Reutilizar codigos modificandolos */
+/* @mixin titulos ($bg-color){
+    background-color: ;
+    
+} */
 /* CONDICIONALES */
 /* 
     if condicion {
@@ -47,11 +49,11 @@ body {
     margin: auto;
     justify-content: space-evenly;
     width: 80%; }
-    .navbar .navbar-nav .navbar-nav .navbar a {
+    .navbar .navbar-nav .navbar a {
       color: white !important;
       text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0, 0, 0, 0.47) !important;
       transition: transform 1s; }
-      .navbar .navbar-nav .navbar-nav .navbar a:hover {
+      .navbar .navbar-nav .navbar a:hover {
         transform: scale(1.1); }
 
 footer {
@@ -77,47 +79,91 @@ footer {
   height: 30px;
   margin: auto; }
 
-h2 {
-  text-align: center;
-  border: groove 2px white;
-  color: white;
-  background-color: black;
-  margin: auto;
-  width: 200px;
-  font-size: 20pt !important;
-  font-family: 'Indie Flower';
-  border-radius: 5px; }
+main {
+  display: flex;
+  direction: block;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: space-around;
+  width: 100%; }
+  main h2 {
+    text-align: center;
+    border: groove 2px white;
+    color: white;
+    background-color: black;
+    margin: auto;
+    width: 200px;
+    font-size: 20pt !important;
+    font-family: 'Indie Flower';
+    border-radius: 5px; }
+  main h3 {
+    text-align: center;
+    border: groove 2px #ce432b;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.277);
+    margin: auto;
+    width: 100%;
+    font-size: 28pt !important;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 3rem !important; }
+  main h4 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.52);
+    border-radius: 5%;
+    width: max-content;
+    padding: 2%;
+    color: #ffc400;
+    font-family: "Montserrat";
+    margin: auto; }
 
-h3 {
-  text-align: center;
-  border: groove 2px #ce432b;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.277);
+.maps {
+  display: flex;
+  justify-content: center;
+  border: solid 10px black;
   margin: auto;
-  width: 100%;
-  font-size: 28pt !important;
-  font-family: 'Indie Flower', cursive;
-  margin-top: 3rem !important; }
+  margin-bottom: 5%;
+  height: 500px;
+  width: 650px; }
 
-h4 {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.52);
-  border-radius: 5%;
-  width: max-content;
-  padding: 2%;
-  color: #ffc400;
+p {
   font-family: "Montserrat";
+  font-size: 16pt;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.926); }
+
+.carousel-item {
+  height: 38rem;
+  width: 100%; }
+
+.promost {
+  width: 100%; }
+
+.promos {
+  display: flex;
+  justify-content: center;
+  margin: 5%; }
+
+.promos__subt1 {
+  background-color: #0000004d;
+  border-radius: 15px;
+  padding: 10px;
+  width: 20rem;
   margin: auto; }
 
-h5 {
-  font-family: "Barlow Condensed";
-  color: #c7c710;
-  font-size: 30px;
-  width: fit-content;
-  text-align: justify;
-  padding: 5px;
-  height: fit-content;
-  background-color: rgba(129, 11, 11, 0.526); }
+.promos__subt2 {
+  background-color: #ffbf00b0;
+  text-align: center;
+  padding: 1%;
+  border-radius: 20%;
+  font-size: 4px;
+  margin: 0rem 10rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.p__importante {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 18pt;
+  color: #7f0000; }
 
 .cajaformulario {
   display: flex;
@@ -141,11 +187,6 @@ h5 {
   width: 100%;
   height: 60px; }
 
-.enviar {
-  display: flex;
-  justify-content: center;
-  margin: auto; }
-
 /* .main { */
 /* atributos */
 /* @include flexbox(block, flex-start, end);
@@ -161,3 +202,161 @@ h5 {
         }
         }
 } */
+.menu {
+  background-image: url(./imagenes/menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .menu .menu h4 {
+    font-size: 20px; }
+    .menu .menu h4 .menu p {
+      font-size: 15px; }
+
+.contenedor1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 15% 90%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  width: 80vw;
+  margin: auto;
+  height: fit-content;
+  margin-top: 5rem; }
+  .contenedor1 .lineas__clasica {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 1rem; }
+    .contenedor1 .lineas__clasica .maxima {
+      grid-area: 2 / 1 / 3 / 2; }
+    .contenedor1 .lineas__clasica .victoria {
+      grid-area: 2 / 2 / 3 / 3; }
+    .contenedor1 .lineas__clasica .isabel {
+      grid-area: 2 / 3 / 3 / 4; }
+
+.contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 15% 100%;
+  grid-template-areas: "lineaGolden lineaGolden lineaCheese lineaCheese lineaHomenaje lineaHomenaje" "reyarturo magnus william charlotte smokeshack friedonion";
+  width: 100%;
+  margin: auto;
+  margin-top: 8rem; }
+  .contenedor2 .lineaGolden, .contenedor2 .lineaCheese, .contenedor2 .lineaHomenaje {
+    width: 100%;
+    justify-content: center;
+    height: fit-content;
+    margin: auto; }
+  .contenedor2 .reyarturo .magnus .william .ccharlotte .smokeshack .friedonion {
+    margin: 1rem 1rem; }
+  .contenedor2 .lineaGolden {
+    grid-area: lineaGolden; }
+  .contenedor2 .lineaCheese {
+    grid-area: lineaCheese; }
+  .contenedor2 .lineaHomenaje {
+    grid-area: lineaHomenaje; }
+  .contenedor2 .reyarturo {
+    grid-area: reyarturo; }
+  .contenedor2 .magnus {
+    grid-area: magnus; }
+  .contenedor2 .william {
+    grid-area: william; }
+  .contenedor2 .charlotte {
+    grid-area: charlotte; }
+  .contenedor2 .smokeshack {
+    grid-area: smokeshack; }
+  .contenedor2 .friedonion {
+    grid-area: friedonion; }
+
+.card {
+  background-color: #00000037 !important;
+  /* me pisa el boostrap */
+  border: solid 1px white !important;
+  margin: auto;
+  margin-top: 0%;
+  width: 12rem; }
+  .card .card-img-top {
+    width: 10rem;
+    height: 10rem; }
+
+.menu__subt {
+  margin-top: 10px; }
+
+.nuestrahistoria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "comienzo mudanza" "comienzo ." "local local";
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 50px; }
+  .nuestrahistoria .comienzo {
+    grid-area: comienzo;
+    background-color: rgba(0, 0, 0, 0.544);
+    border-radius: 10px;
+    border: solid 1px black;
+    margin: 10px;
+    width: 90%;
+    height: fit-content;
+    padding: 5px 5px;
+    animation: comienzo 2s ease 0s 1 normal both; }
+
+@keyframes comienzo {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+  .nuestrahistoria .mudanza {
+    grid-area: mudanza;
+    background-color: rgba(0, 0, 0, 0.544);
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: solid 1px black;
+    margin: 10px;
+    width: 95%;
+    height: fit-content;
+    animation: mudanza 2s ease 1s 1 normal both; }
+
+@keyframes mudanza {
+  0% {
+    opacity: 0;
+    transform: translateX(250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+  .nuestrahistoria .local {
+    grid-area: local;
+    background-color: rgba(0, 0, 0, 0.544);
+    border-radius: 10px;
+    border: solid 1px black;
+    margin: 20px;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding: 5px 5px;
+    animation: local 2s ease 2.5s 1 normal both; }
+
+@keyframes local {
+  0% {
+    opacity: 0;
+    transform: translateY(250px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.textolargo {
+  font-family: Montserrat;
+  font-size: 18px;
+  text-align: justify;
+  color: white; }
+
+.link__pedidos {
+  padding: 30px; }
+
+.linkpedidos {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  margin: auto; }

@@ -1,0 +1,83 @@
+.nuestrahistoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+       "comienzo mudanza"
+        "comienzo ."
+        "local local";
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    .comienzo {
+        grid-area: comienzo;
+        background-color: rgba(0, 0, 0, 0.544);
+        border-radius: 10px;
+        border: solid 1px black; 
+        margin: 10px;
+        width: 90%;
+        height: fit-content;
+        padding: 5px 5px;
+        animation: comienzo 2s ease 0s 1 normal both;}
+        @keyframes comienzo {
+            0% {
+                opacity: 0;
+                transform: translateX(-250px);
+            }        
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    .mudanza { 
+        grid-area: mudanza;
+        background-color: rgba(0, 0, 0, 0.544);
+        border-radius: 10px;
+        padding: 5px 5px;
+        border: solid 1px black;
+        margin: 10px;
+        width: 95%;
+        height: fit-content;
+        animation: mudanza 2s ease 1s 1 normal both;}
+        @keyframes mudanza {
+            0% {
+                opacity: 0;
+                transform: translateX(250px);
+            }        
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    .local {
+        grid-area: local;
+        background-color: rgba(0, 0, 0, 0.544);
+        border-radius: 10px;
+        border: solid 1px black;
+        margin: 20px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        padding: 5px 5px;
+        animation: local 2s ease 2.5s 1 normal both;}
+        @keyframes local {
+            0% {
+                opacity: 0;
+                transform: translateY(250px);
+            }        
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+}
+.textolargo {
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+
+}

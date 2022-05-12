@@ -1,13 +1,3 @@
-
-
-
-/* $tamanio-total: 100%;
-$tamanio-medio: $tamanio-total/2;
-$tamanio-chico: $tamanio-medio/2; */
-
-
-
-/* MAPS siempre con parentesis*/
 $tamanio-tipografia:(
     titulos: 24px,
     subtitulos: 18px,
@@ -16,30 +6,23 @@ $tamanio-tipografia:(
 );
 
 $colores:(
-    color-principal: rgba(120, 0, 0, 0.57),
+    color-principal: rgba(120, 0, 0, 0.277),
     color-secundario: #ce432b,
-    color-titulos: red,
-    color-subtitulos: yellow,
-    color-subtitulosb: blue,
-
+    color-titulos: white,
+    color-subtitulos: #ffc400,  
+    
 );
-
-/* @each $redsocial, $color in $redessociales {
-    .icono-#{redsocial}{
-
-    } */
-
-
-/* EXTEND sirve para repetir */
-
+/* EXTEND */
 %flex-center{
     display: flex;
     justify-content: center;
+    margin: auto;
     align-items: center;
 
 };
+
 /* Reutilizar codigos modificandolos */
-@mixin flexbox ($direction, $justify, $align /* parametros */) {
+@mixin flexbox ($direction, $justify, $align) {
     display: flex;
     direction: $direction;
     justify-content: $justify;
@@ -52,7 +35,10 @@ $colores:(
     }
 
 }
-
+/* @mixin titulos ($bg-color){
+    background-color: ;
+    
+} */
 /* CONDICIONALES */
 
 /* 

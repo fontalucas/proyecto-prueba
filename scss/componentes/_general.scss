@@ -29,7 +29,7 @@ body {
         margin: auto;
         justify-content: space-evenly;
         width: 80%; 
-        .navbar-nav .navbar a {
+        .navbar a {
             color: white !important;
             text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47) !important;
             transition: transform 1s; 
@@ -60,13 +60,16 @@ footer {
     }
 }
 .iconos {
-     width: 30px;
-     height: 30px;
+    width: 30px;
+    height: 30px;
     margin: auto;    
 }
 
-
-h2 {
+main {
+    @include flexbox(block, space-around, center);
+    width: 100%;
+    
+    h2 /* SUBTITULO MENU */{
     text-align: center;
     border: groove 2px rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -75,9 +78,8 @@ h2 {
     width: 200px;
     font-size: 20pt !important;
     font-family: 'Indie Flower';
-    border-radius: 5px;
-}
-h3 {
+    border-radius: 5px;}
+    h3 /* TITULOS */{
     text-align: center;
     border: groove 2px #ce432b;
     color: rgb(255, 255, 255);
@@ -86,9 +88,8 @@ h3 {
     width: 100%;
     font-size: 28pt !important;
     font-family: 'Indie Flower', cursive;
-    margin-top: 3rem !important;
-}
-h4 {
+    margin-top: 3rem !important;}
+    h4 /* SUBTITULOS */{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.52);
     border-radius: 5%;
@@ -97,14 +98,24 @@ h4 {
     color: #ffc400;
     font-family: "Montserrat";
     margin: auto;
+    }
 }
-h5 {
-    font-family: "Barlow Condensed";
-    color: rgb(199, 199, 16);
-    font-size: 30px;
-    width: fit-content;
-    text-align: justify;
-    padding: 5px;
-    height: fit-content;
-    background-color: rgba(129, 11, 11, 0.526);
+
+.maps {
+    display: flex;
+    justify-content: center;
+    border: solid 10px black;
+    margin: auto;
+    margin-bottom: 5%;
+    height: 500px;
+    width: 650px;
+    
+   
+}
+p {
+    font-family: "Montserrat";
+    font-size: 16pt;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.926);
+    
 }

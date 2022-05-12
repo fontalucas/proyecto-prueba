@@ -26,7 +26,5 @@
 }
     
 .enviar {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    @extend %flex-center;
 }
