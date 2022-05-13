@@ -39,21 +39,22 @@ body {
 }
 
 footer {
-    position: relative;
-    width: 100%;
-    @include flexbox(column, center, center);
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;}
     .footer__redes {
         background-color: rgba(0, 0, 0, 0.544);
         margin-bottom: 0;
         display: flex;
         justify-content: end; 
     }
-}
 .footer__lista__links {
     display: inline-block;
     margin: 10px; }
 .footer__lista__links a {
-    @include flexbox(column, center, center);
+    @include flexbox(column-reverse, none, center);
     text-decoration: none;
     color: #FFFFFF;
     margin: auto;
@@ -111,7 +112,7 @@ h4 /* SUBTITULOS */{
 }
 p {
     font-family: "Montserrat";
-    font-size: 16pt;
+    font-size: 1rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.926);
     

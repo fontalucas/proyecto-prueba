@@ -2,8 +2,7 @@
 .maps, .cajaformulario, .enviar {
   display: flex;
   justify-content: center;
-  margin: auto;
-  align-items: center; }
+  margin: auto; }
 
 /* Reutilizar codigos modificandolos */
 /* @mixin titulos ($bg-color){
@@ -61,19 +60,14 @@ footer {
   position: relative;
   width: 100%;
   display: flex;
-  direction: column;
-  justify-content: center;
-  align-items: center;
-  /* @if $direction == column {
-        justify-items: end;   
-    }@else {
-        justify-items: space-around;
-    } */ }
-  footer .footer__redes {
-    background-color: rgba(0, 0, 0, 0.544);
-    margin-bottom: 0;
-    display: flex;
-    justify-content: end; }
+  flex-direction: column;
+  justify-content: center; }
+
+.footer__redes {
+  background-color: rgba(0, 0, 0, 0.544);
+  margin-bottom: 0;
+  display: flex;
+  justify-content: end; }
 
 .footer__lista__links {
   display: inline-block;
@@ -81,8 +75,8 @@ footer {
 
 .footer__lista__links a {
   display: flex;
-  direction: column;
-  justify-content: center;
+  direction: column-reverse;
+  justify-content: none;
   align-items: center;
   /* @if $direction == column {
         justify-items: end;   
@@ -150,7 +144,7 @@ h4 {
 
 p {
   font-family: "Montserrat";
-  font-size: 16pt;
+  font-size: 1rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.926); }
 
