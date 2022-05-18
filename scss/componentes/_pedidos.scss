@@ -8,3 +8,17 @@
     color: white;
     margin: auto;
 }
+
+@media only screen and (max-width: 426px) {
+    .link__pedidos {
+        padding: 30px;
+    }
+    
+    .linkpedidos {
+        text-decoration: none;
+        list-style: none;
+        color: #FFFFFF;
+        margin: auto;
+    }
+    
+}

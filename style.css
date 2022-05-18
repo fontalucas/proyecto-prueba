@@ -434,6 +434,7 @@ footer {
 
 /* PSEUDO ELEMENTO */
     /* :active */
+
 /* MEDIA: max es hasta esos px, min es desde "x"px a mas */
 @media only screen and (max-width: 768px) {
     .header {
@@ -624,14 +625,6 @@ footer {
         font-size: 3px;
     }
     
-    .promos__subt3 {
-        margin: auto;
-        border-radius: 15%;
-        padding: 1%;
-        width: 60%;
-        margin-bottom: 10px;
-        font-size: 3px;
-    }
     .promos__subt2 {
         padding: 6%;
         border-radius: 50%;
@@ -807,4 +800,3 @@ h2 {
 }
 
    }
-

@@ -87,3 +87,101 @@ margin: 1rem 1rem;
 .menu__subt {
     margin-top: 10px;
 }
+@media only screen and (max-width: 425px) {
+    .menu h4 {
+        font-size: 13px !important;
+        
+    }
+    .menu p {
+        font-size: 9px !important;
+    }
+    h2 {
+        font-size: 15px !important;
+        width: fit-content;
+        padding: 2px;
+    }
+    .contenedor1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 30% 30% 30%;
+        grid-template-areas: 
+        "lineas__clasica"
+        "maxima"
+        "victoria"
+        "isabel";
+        margin: 2rem 0rem;
+        width: 80vw;
+        margin: auto;
+        
+    }
+    
+        
+    .lineas__clasica { grid-area: lineas__clasica;}
+    .maxima { grid-area: maxima;}
+    .victoria { grid-area: victoria; }
+    .isabel { grid-area: isabel; }
+    
+    .contenedor2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3% 12% 12% 3% 12% 12% 3% 12% 12% ;
+            grid-template-areas: 
+                "lineaGolden"
+                "reyarturo" 
+                "magnus" 
+                "lineaCheese" 
+                "william"
+                "charlotte" 
+                "lineaHomenaje"
+                "smokeshack"  
+                "friedonion";
+            width: 95%;
+            justify-content: center;
+            margin: auto;
+            gap: 2rem;
+            margin-top: 55px;
+        
+    
+        
+            
+    }
+    .contenedor2 .lineaGolden, .lineaCheese, .lineaHomenaje {
+        width: 100%;
+        justify-content: center;
+        height: fit-content;
+        margin: auto;
+        
+        
+        
+    }
+    .contenedor2 .reyarturo .magnus .william .ccharlotte .smokeshack .friedonion {
+        margin: 1rem 1rem;    
+    }        
+    .lineaGolden { grid-area: lineaGolden; }
+    .lineaCheese { grid-area: lineaCheese; }
+    .lineaHomenaje { grid-area: lineaHomenaje; }
+    .reyarturo { grid-area: reyarturo; }
+    .magnus { grid-area: magnus; }
+    .william { grid-area: william; }
+    .charlotte { grid-area: charlotte; }
+    .smokeshack { grid-area: smokeshack; }
+    .friedonion { grid-area: friedonion; }
+    
+    .menu__subt {
+        margin-top: 10px;
+    }
+    
+    .card {
+        background-color: #00000037 !important; /* me pisa el boostrap */
+        border: solid 1px white !important;
+        margin: auto;
+        margin-top: 0%;
+        width: 9rem !important;
+    }
+    
+    .card-img-top {
+        width: 8rem !important;
+        height: 8rem !important;
+        margin: auto;
+    }   
+}
