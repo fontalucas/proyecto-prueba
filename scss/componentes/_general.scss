@@ -134,62 +134,26 @@ p {
         width: 100px;
         height: 100px;  
         align-items: center;
-        margin: 5px ;
-        
+        margin: 5px ;   
     }
-        
-    .header__list {
-        border: solid 1px black;
-        width: 99vw;
-        background-color: rgba(116, 24, 24, 0.782);
-        color: rgb(182, 32, 32);
-        display: flex;
-        justify-content: center;
-      
+    .carousel-item {
+        height: 100%;
     }
-    .header__list__item {
-        display: inline-block;
-        padding: 2px;
-        margin: 5px 20px;
-       
-    }
-    .cabecera__list__link {     
-        text-decoration: none;
-        list-style: none;
-        color: white;
-        text-align: center;
-        font-size: 13px;
-        text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47);
-    
-    } 
-    .banner {
-           justify-content: center;
-           margin: auto;
-           width: 98vw;
-       }
        /* MAIN */
 
     .promost {
         width: 100%;
+        margin: auto;
     }
     .promos {
         display: flex;
         justify-content: center;
-        margin: auto;
         width: 80%;
         margin-bottom: 20px;
-    
+        margin: auto;
     }
     
     .promos__subt1 {
-        margin: auto;
-        border-radius: 15%;
-        padding: 2%;
-        width: 30%;
-        font-size: 3px;
-    }
-    
-    .promos__subt3 {
         margin: auto;
         border-radius: 15%;
         padding: 2%;
@@ -201,8 +165,7 @@ p {
         border-radius: 80%;
         font-size: 3px;
         width: 30%;
-        margin: auto;
-        margin: 0px 1rem;
+        margin: 0% 10%;
     }
     
     p {
@@ -241,8 +204,12 @@ p {
 footer {
     position: relative;
     width: 100%;    
+    bottom: 0;  
 }
 
+.footer__redes {
+    bottom: 0;
+}
 .footer__lista__links {
     margin: 5px; 
 }
@@ -274,20 +241,6 @@ footer {
         align-items: center;
         margin: 5px ;    
     }
-    .navbar-toggler-icon {
-        height: 15px !important;
-        width: 15px !important;
-    }
-    .navbar a {
-        color: white !important;
-        text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0,0,0,0.47) !important;
-        font-size: 0.7rem !important;
-    }
-    .carousel-item {
-        height: 9rem;
-        width: 100%;
-    }
-
        /* MAIN */
 
     .promost {
@@ -297,29 +250,25 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
-        width: 80%;
-    
+        margin: auto !important;
+        width: 80%;    
     }
-    
     .promos__subt1 {
         border-radius: 15%;
         padding: 2%;
-        width: 60%;
+        width: 60% !important;
         margin: auto;
         font-size: 3px;
     }
-    
     .promos__subt2 {
         padding: 6%;
         border-radius: 50%;
         font-size: 1px;
         width: 65%;
-        margin: auto;
+        margin: auto !important;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
     p {
         font-family: Montserrat;
         font-size: 0.6rem !important;
@@ -355,7 +304,9 @@ footer {
 /* FOOTER */
 footer {
     position: relative;
-    width: 100%;    
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0%;
 }
 
 .footer__lista__links {
@@ -396,11 +347,9 @@ h2 {
     "isabel";
     margin: 2rem 0rem;
     width: 80vw;
-    margin: auto;
-    
+    margin: auto;    
 }
 
-    
 .lineas__clasica { grid-area: lineas__clasica;}
 .maxima { grid-area: maxima;}
 .victoria { grid-area: victoria; }
@@ -425,19 +374,12 @@ h2 {
         margin: auto;
         gap: 2rem;
         margin-top: 55px;
-    
-
-    
-        
 }
 .contenedor2 .lineaGolden, .lineaCheese, .lineaHomenaje {
     width: 100%;
     justify-content: center;
     height: fit-content;
     margin: auto;
-    
-    
-    
 }
 .contenedor2 .reyarturo .magnus .william .ccharlotte .smokeshack .friedonion {
     margin: 1rem 1rem;    
@@ -481,7 +423,5 @@ h2 {
     text-decoration: none;
     list-style: none;
     color: #FFFFFF;
-    margin: auto;
+    margin: auto; }
 }
-
-   }

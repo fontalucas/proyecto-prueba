@@ -141,8 +141,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 15% 100%;
-  grid-template-areas: "lineaGolden lineaGolden lineaCheese lineaCheese lineaHomenaje lineaHomenaje"
- "reyarturo magnus william charlotte smokeshack friedonion";
+  grid-template-areas: "lineaGolden lineaGolden lineaCheese lineaCheese lineaHomenaje lineaHomenaje" "reyarturo magnus william charlotte smokeshack friedonion";
   width: 100%;
   margin: auto;
   margin-top: 8rem; }
@@ -211,10 +210,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 30% 30% 30%;
-    grid-template-areas: "lineas__clasica"
- "maxima"
- "victoria"
- "isabel";
+    grid-template-areas: "lineas__clasica" "maxima" "victoria" "isabel";
     margin: 2rem 0rem;
     width: 80vw;
     margin: auto; }
@@ -230,15 +226,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3% 12% 12% 3% 12% 12% 3% 12% 12%;
-    grid-template-areas: "lineaGolden"
- "reyarturo" 
- "magnus" 
- "lineaCheese" 
- "william"
- "charlotte" 
- "lineaHomenaje"
- "smokeshack"  
- "friedonion";
+    grid-template-areas: "lineaGolden" "reyarturo"  "magnus"  "lineaCheese"  "william" "charlotte"  "lineaHomenaje" "smokeshack"   "friedonion";
     width: 95%;
     justify-content: center;
     margin: auto;
@@ -287,8 +275,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "comienzo mudanza"
- "local local";
+  grid-template-areas: "comienzo mudanza" "local local";
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 90%;
@@ -365,15 +352,6 @@
   list-style: none;
   color: white;
   margin: auto; }
-
-@media only screen and (max-width: 426px) {
-  .link__pedidos {
-    padding: 30px; }
-  .linkpedidos {
-    text-decoration: none;
-    list-style: none;
-    color: #FFFFFF;
-    margin: auto; } }
 
 * {
   padding: 0;
@@ -517,44 +495,19 @@ p {
     height: 100px;
     align-items: center;
     margin: 5px; }
-  .header__list {
-    border: solid 1px black;
-    width: 99vw;
-    background-color: rgba(116, 24, 24, 0.782);
-    color: #b62020;
-    display: flex;
-    justify-content: center; }
-  .header__list__item {
-    display: inline-block;
-    padding: 2px;
-    margin: 5px 20px; }
-  .cabecera__list__link {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    text-align: center;
-    font-size: 13px;
-    text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0, 0, 0, 0.47); }
-  .banner {
-    justify-content: center;
-    margin: auto;
-    width: 98vw; }
+  .carousel-item {
+    height: 100%; }
   /* MAIN */
   .promost {
-    width: 100%; }
+    width: 100%;
+    margin: auto; }
   .promos {
     display: flex;
     justify-content: center;
-    margin: auto;
     width: 80%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin: auto; }
   .promos__subt1 {
-    margin: auto;
-    border-radius: 15%;
-    padding: 2%;
-    width: 30%;
-    font-size: 3px; }
-  .promos__subt3 {
     margin: auto;
     border-radius: 15%;
     padding: 2%;
@@ -565,8 +518,7 @@ p {
     border-radius: 80%;
     font-size: 3px;
     width: 30%;
-    margin: auto;
-    margin: 0px 1rem; }
+    margin: 0% 10%; }
   p {
     font-family: Montserrat;
     font-size: 0.6rem;
@@ -595,7 +547,10 @@ p {
   /* FOOTER */
   footer {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    bottom: 0; }
+  .footer__redes {
+    bottom: 0; }
   .footer__lista__links {
     margin: 5px; }
   .footer__lista__links a {
@@ -620,16 +575,6 @@ p {
     height: 75px;
     align-items: center;
     margin: 5px; }
-  .navbar-toggler-icon {
-    height: 15px !important;
-    width: 15px !important; }
-  .navbar a {
-    color: white !important;
-    text-shadow: 0 0 10px #FFFFFF, 0px 1px 20px rgba(0, 0, 0, 0.47) !important;
-    font-size: 0.7rem !important; }
-  .carousel-item {
-    height: 9rem;
-    width: 100%; }
   /* MAIN */
   .promost {
     width: 100%; }
@@ -637,12 +582,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    margin: auto !important;
     width: 80%; }
   .promos__subt1 {
     border-radius: 15%;
     padding: 2%;
-    width: 60%;
+    width: 60% !important;
     margin: auto;
     font-size: 3px; }
   .promos__subt2 {
@@ -650,7 +595,7 @@ p {
     border-radius: 50%;
     font-size: 1px;
     width: 65%;
-    margin: auto;
+    margin: auto !important;
     margin-top: 10px;
     margin-bottom: 10px; }
   p {
@@ -681,7 +626,9 @@ p {
   /* FOOTER */
   footer {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0%; }
   .footer__lista__links {
     margin: 3px; }
   .footer__lista__links a {
@@ -703,10 +650,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 30% 30% 30%;
-    grid-template-areas: "lineas__clasica"
- "maxima"
- "victoria"
- "isabel";
+    grid-template-areas: "lineas__clasica" "maxima" "victoria" "isabel";
     margin: 2rem 0rem;
     width: 80vw;
     margin: auto; }
@@ -722,15 +666,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3% 12% 12% 3% 12% 12% 3% 12% 12%;
-    grid-template-areas: "lineaGolden"
- "reyarturo" 
- "magnus" 
- "lineaCheese" 
- "william"
- "charlotte" 
- "lineaHomenaje"
- "smokeshack"  
- "friedonion";
+    grid-template-areas: "lineaGolden" "reyarturo"  "magnus"  "lineaCheese"  "william" "charlotte"  "lineaHomenaje" "smokeshack"   "friedonion";
     width: 95%;
     justify-content: center;
     margin: auto;
