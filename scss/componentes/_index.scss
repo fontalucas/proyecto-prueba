@@ -31,3 +31,114 @@
     color: #7f0000; 
 }
 
+@media only screen and (max-width: 768px) {
+    .promost {
+        width: 100%;
+        margin: auto;
+    }
+    .promos {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    
+    .promos__subt1 {
+        border-radius: 15%;
+        padding: 2%;
+        width: 30%;
+        font-size: 3px;
+        margin: 0% 10% !important;
+    }
+    .promos__subt2 {
+        padding: 3%;
+        border-radius: 80%;
+        font-size: 3px;
+        width: 30%;
+        margin: auto !important;
+    }
+    .carousel-item {
+        height: 20rem !important;
+        width: 100vw !important;
+    }
+}
+@media only screen and (max-width: 425px) {
+ /* INDEX */
+ /* HEADER */
+ .carousel-item {
+    height: 10rem !important;
+    width: 100vh;
+}
+ .header {
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 5px;
+ }
+ .cabecera__img {    
+     border-radius: 20%;
+     width: 75px;
+     height: 75px;  
+     align-items: center;
+     margin: 5px ;    
+ }
+    /* MAIN */
+
+ .promost {
+     width: 100%;
+    margin-bottom: 5%;
+ }
+ .promos {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: auto !important;
+     width: 100%;    
+ }
+ .promos__subt1 {
+     border-radius: 15%;
+     padding: 2%;
+     width: 60% !important;
+     margin: auto !important;
+     font-size: 3px;
+ }
+ .promos__subt2 {
+     padding: 6%;
+     border-radius: 50%;
+     font-size: 1px;
+     width: 65%;
+     margin: auto;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ p {
+     font-family: Montserrat;
+     font-size: 0.6rem !important;
+     text-align: center;        
+ }
+ .p__importante {
+     text-align: center;
+     font-size: 0.7rem !important;        
+     
+ } 
+ 
+ .maps {
+     justify-content: center;
+     border: solid 3px black;
+     width: fit-content;
+     margin: auto;
+     margin-bottom: 5%;
+     height: 150px;
+     width: 200px;
+ }   
+ h3 {
+     font-size: 1.3rem !important;
+     width: 99%;
+     margin-top: 10px !important;
+ }
+ h4 {
+     border-radius: 5%;
+     width: max-content;
+     font-size: 0.9rem !important;
+     padding: 2px ;
+     margin: auto; }
+}

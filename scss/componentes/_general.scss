@@ -139,35 +139,10 @@ p {
     .carousel-item {
         height: 100%;
     }
+    .navbar {
+        width: 100vw !important;
+    }
        /* MAIN */
-
-    .promost {
-        width: 100%;
-        margin: auto;
-    }
-    .promos {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin-bottom: 20px;
-        margin: auto;
-    }
-    
-    .promos__subt1 {
-        margin: auto;
-        border-radius: 15%;
-        padding: 2%;
-        width: 30%;
-        font-size: 3px;
-    }
-    .promos__subt2 {
-        padding: 3%;
-        border-radius: 80%;
-        font-size: 3px;
-        width: 30%;
-        margin: 0% 10%;
-    }
-    
     p {
         font-family: Montserrat;
         font-size: 0.6rem;
@@ -227,13 +202,6 @@ footer {
    @media only screen and (max-width: 425px) {
     /* INDEX */
     /* HEADER */
-    .header {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 5px;
-    }
     .cabecera__img {    
         border-radius: 20%;
         width: 75px;
@@ -242,33 +210,6 @@ footer {
         margin: 5px ;    
     }
        /* MAIN */
-
-    .promost {
-        width: 100%;
-    }
-    .promos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto !important;
-        width: 80%;    
-    }
-    .promos__subt1 {
-        border-radius: 15%;
-        padding: 2%;
-        width: 60% !important;
-        margin: auto;
-        font-size: 3px;
-    }
-    .promos__subt2 {
-        padding: 6%;
-        border-radius: 50%;
-        font-size: 1px;
-        width: 65%;
-        margin: auto !important;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
     p {
         font-family: Montserrat;
         font-size: 0.6rem !important;
@@ -279,7 +220,6 @@ footer {
         font-size: 0.7rem !important;        
         
     } 
-    
     .maps {
         justify-content: center;
         border: solid 3px black;
@@ -305,9 +245,9 @@ footer {
 footer {
     position: relative;
     width: 100%;
-    bottom: 0;
-    margin-bottom: 0%;
-}
+    bottom: 0 !important;
+    margin-bottom: 0% !important;
+}   
 
 .footer__lista__links {
     margin: 3px; 
@@ -336,81 +276,6 @@ h2 {
     width: fit-content;
     padding: 2px;
 }
-.contenedor1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 30% 30% 30%;
-    grid-template-areas: 
-    "lineas__clasica"
-    "maxima"
-    "victoria"
-    "isabel";
-    margin: 2rem 0rem;
-    width: 80vw;
-    margin: auto;    
-}
-
-.lineas__clasica { grid-area: lineas__clasica;}
-.maxima { grid-area: maxima;}
-.victoria { grid-area: victoria; }
-.isabel { grid-area: isabel; }
-
-.contenedor2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3% 12% 12% 3% 12% 12% 3% 12% 12% ;
-        grid-template-areas: 
-            "lineaGolden"
-            "reyarturo" 
-            "magnus" 
-            "lineaCheese" 
-            "william"
-            "charlotte" 
-            "lineaHomenaje"
-            "smokeshack"  
-            "friedonion";
-        width: 95%;
-        justify-content: center;
-        margin: auto;
-        gap: 2rem;
-        margin-top: 55px;
-}
-.contenedor2 .lineaGolden, .lineaCheese, .lineaHomenaje {
-    width: 100%;
-    justify-content: center;
-    height: fit-content;
-    margin: auto;
-}
-.contenedor2 .reyarturo .magnus .william .ccharlotte .smokeshack .friedonion {
-    margin: 1rem 1rem;    
-}        
-.lineaGolden { grid-area: lineaGolden; }
-.lineaCheese { grid-area: lineaCheese; }
-.lineaHomenaje { grid-area: lineaHomenaje; }
-.reyarturo { grid-area: reyarturo; }
-.magnus { grid-area: magnus; }
-.william { grid-area: william; }
-.charlotte { grid-area: charlotte; }
-.smokeshack { grid-area: smokeshack; }
-.friedonion { grid-area: friedonion; }
-
-.menu__subt {
-    margin-top: 10px;
-}
-
-.card {
-    background-color: #00000037 !important; /* me pisa el boostrap */
-    border: solid 1px white !important;
-    margin: auto;
-    margin-top: 0%;
-    width: 9rem !important;
-}
-
-.card-img-top {
-    width: 8rem !important;
-    height: 8rem !important;
-    margin: auto;
-}   
 
 /* MAIN PEDIDOS */ /* MAIN PEDIDOS */ /* MAIN PEDIDOS */ /* MAIN PEDIDOS */
 
