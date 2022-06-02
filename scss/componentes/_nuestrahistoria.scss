@@ -82,7 +82,9 @@
 }
 @media only screen and (max-width: 425px) {
     body {
-        width: 100vw;
+            background-image: url(../imagenes/BACKROUND.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
     }
     .nuestrahistoria {
         display: grid;
