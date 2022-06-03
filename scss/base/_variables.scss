@@ -43,7 +43,7 @@ $colores:(
     }
 */
 
-@mixin mediaQuery ($pantalla) {
+/* @mixin mediaQuery ($pantalla) {
     
     @if $pantalla == mobile {
         @media only screen and (max-width: 425px) {
@@ -64,6 +64,6 @@ $colores:(
         
     };
 }
-
+ */
 /* BUCLE FOR */
 

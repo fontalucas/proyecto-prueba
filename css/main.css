@@ -19,6 +19,28 @@
     } else { ahora te puedes
     }
 */
+/* @mixin mediaQuery ($pantalla) {
+    
+    @if $pantalla == mobile {
+        @media only screen and (max-width: 425px) {
+            @content;
+     }
+        
+    };
+    @if $pantalla == tablet {
+        @media only screen and (max-width: 780px) {
+            @content;
+        }
+        
+    };
+    @if $pantalla == desktop {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+        
+    };
+}
+ */
 /* BUCLE FOR */
 .carousel-item {
   height: 38rem;
@@ -455,11 +477,17 @@
   text-align: justify;
   color: white; }
 
+@media only screen and (max-width: 768px) {
+  @keyframes mudanza {
+    0% {
+      opacity: 0;
+      transform: translateX(1px); } } }
+
 @media only screen and (max-width: 425px) {
-  body {
-    background-image: url(../imagenes/BACKROUND.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; }
+  @keyframes mudanza {
+    0% {
+      opacity: 0;
+      transform: translateX(1px); } }
   .nuestrahistoria {
     display: grid;
     grid-template-columns: 1fr;
@@ -677,6 +705,8 @@ p {
 @media only screen and (max-width: 425px) {
   /* INDEX */
   /* HEADER */
+  body {
+    max-width: 100% !important; }
   .cabecera__img {
     border-radius: 20%;
     width: 75px;

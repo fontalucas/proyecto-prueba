@@ -80,12 +80,24 @@
     color: rgb(255, 255, 255);
 
 }
-@media only screen and (max-width: 425px) {
-    body {
-            background-image: url(../imagenes/BACKROUND.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
+@media only screen and (max-width: 768px) {
+
+.mudanza { 
+    @keyframes mudanza {
+        0% {
+            opacity: 0;
+            transform: translateX(1px);}
+        }        
     }
+}
+@media only screen and (max-width: 425px) {
+    .mudanza { 
+        @keyframes mudanza {
+            0% {
+                opacity: 0;
+                transform: translateX(1px);}
+            }        
+        }
     .nuestrahistoria {
         display: grid;
         grid-template-columns: 1fr;
