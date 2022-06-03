@@ -364,7 +364,7 @@
     justify-content: center;
     margin: auto;
     gap: 2rem;
-    margin-top: 55px; }
+    mar9gin-top: 55px; }
   .contenedor2 .lineaGolden, .lineaCheese, .lineaHomenaje {
     width: 100%;
     justify-content: center;
@@ -393,14 +393,14 @@
   .menu__subt {
     margin-top: 10px; }
   .card {
-    background-color: #00000037 !important;
+    background-color: #000000d5 !important;
     /* me pisa el boostrap */
     border: solid 1px white !important;
     margin: auto;
     margin-top: 0%;
-    width: 9rem !important; }
+    width: 11rem !important; }
   .card-img-top {
-    width: 8rem !important;
+    width: 10rem !important;
     height: 8rem !important;
     margin: auto; } }
 
